@@ -21,3 +21,7 @@ Partialy used content of `/etc/nginx/fastcgi_params`, except of `SCRIPT_FILENAME
 ## best.conf
 
 Like `big.conf`, but with redirect from wrong URLs to main page.
+
+# Copyright
+
+Distrubuted under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) license.
