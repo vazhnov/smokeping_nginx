@@ -33,6 +33,10 @@ sudo mv best.conf /etc/nginx/sites-available/${MYSITENAME}.conf
 sudo ln -s "../sites-available/${MYSITENAME}.conf" "/etc/nginx/sites-enabled/${MYSITENAME}.conf"
 ```
 
+## Useful links
+
+* [Nginx configurations for most popular CMS/CMF/Frameworks based on PHP](https://github.com/elasticweb/nginx-configs)
+
 ## Copyright
 
 Distrubuted under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) license.
