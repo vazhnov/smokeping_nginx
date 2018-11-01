@@ -31,6 +31,7 @@ sed -i -- s/smokeping\.example\.com/${MYSITENAME}/g best.conf
 sudo chown root: best.conf
 sudo mv best.conf /etc/nginx/sites-available/${MYSITENAME}.conf
 sudo ln -s "../sites-available/${MYSITENAME}.conf" "/etc/nginx/sites-enabled/${MYSITENAME}.conf"
+sudo nginx -t
 ```
 
 ## Useful links
