@@ -37,6 +37,8 @@ sudo nginx -t
 ## Useful links
 
 * [Nginx configurations for most popular CMS/CMF/Frameworks based on PHP](https://github.com/elasticweb/nginx-configs)
+* [recipes](https://github.com/nginxinc/nginx-wiki/tree/master/source/start/topics/recipes) from [nginx-wiki](https://www.nginx.com/resources/wiki/)
+* [examples](https://github.com/nginxinc/nginx-wiki/tree/master/source/start/topics/examples) from [nginx-wiki](https://www.nginx.com/resources/wiki/)
 
 ## Copyright
 
