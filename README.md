@@ -21,11 +21,14 @@ Like `big.conf`, but with redirect from wrong URLs to main page.
 
 ### Ubuntu / Debian
 
+Note: `apache2-` argument is using here to force APT to not install `apache2` package, which is in _recommends_ list of `smokeping` package. It is also possible to use `--no-install-recommends`, but then other useful packages will not be installed automatically.
+
 Replace here "smokeping.example.net" by your DNS name:
 
 ```shell
 export MYSITENAME="smokeping.example.net"
-sudo apt-get install smokeping fcgiwrap nginx
+sudo apt-get -V install smokeping apache2-
+sudo apt-get -V install fcgiwrap nginx
 wget "https://github.com/vazhnov/smokeping_nginx/raw/master/best.conf"
 sed -i -- s/smokeping\.example\.com/${MYSITENAME}/g best.conf
 sudo chown root: best.conf
@@ -42,4 +45,4 @@ sudo nginx -t
 
 ## Copyright
 
-Distrubuted under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) license.
+Distributed under MIT license.
