@@ -29,7 +29,7 @@ Replace here "smokeping.example.net" by your DNS name:
 export MYSITENAME="smokeping.example.net"
 sudo apt-get -V install smokeping apache2-
 sudo apt-get -V install fcgiwrap nginx
-wget "https://github.com/vazhnov/smokeping_nginx/raw/master/best.conf"
+wget "https://github.com/vazhnov/smokeping_nginx/raw/main/best.conf"
 sed -i -- s/smokeping\.example\.com/${MYSITENAME}/g best.conf
 sudo chown root: best.conf
 sudo mv best.conf /etc/nginx/sites-available/${MYSITENAME}.conf
