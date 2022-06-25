@@ -31,10 +31,11 @@ sudo apt-get -V install smokeping apache2-
 sudo apt-get -V install fcgiwrap nginx
 wget "https://github.com/vazhnov/smokeping_nginx/raw/main/best.conf"
 sed -i -- s/smokeping\.example\.com/${MYSITENAME}/g best.conf
-sudo chown root: best.conf
-sudo mv best.conf /etc/nginx/sites-available/${MYSITENAME}.conf
-sudo ln -s "../sites-available/${MYSITENAME}.conf" "/etc/nginx/sites-enabled/${MYSITENAME}.conf"
+sudo chown -v root:root best.conf
+sudo mv -v best.conf /etc/nginx/sites-available/${MYSITENAME}.conf
+sudo ln -v -s "../sites-available/${MYSITENAME}.conf" "/etc/nginx/sites-enabled/${MYSITENAME}.conf"
 sudo nginx -t
+sudo service nginx reload
 ```
 
 ## Useful links
