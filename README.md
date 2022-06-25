@@ -38,6 +38,8 @@ sudo nginx -t
 sudo service nginx reload
 ```
 
+Then open an URL http://smokeping.example.net/smokeping/smokeping.cgi in a web-browser.
+
 ## Useful links
 
 * [Nginx configurations for most popular CMS/CMF/Frameworks based on PHP](https://github.com/elasticweb/nginx-configs)
