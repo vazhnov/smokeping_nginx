@@ -29,7 +29,7 @@ Replace here "smokeping.example.net" by your DNS name:
 export MYSITENAME="smokeping.example.net"
 sudo apt-get -V install smokeping apache2-
 sudo apt-get -V install fcgiwrap nginx
-wget "https://github.com/vazhnov/smokeping_nginx/raw/main/best.conf"
+wget 'https://gitlab.com/vazhnov/smokeping_nginx/-/raw/main/best.conf'
 sed -i -- s/smokeping\.example\.com/${MYSITENAME}/g best.conf
 sudo chown -v root:root best.conf
 sudo mv -v best.conf /etc/nginx/sites-available/${MYSITENAME}.conf
@@ -40,7 +40,12 @@ sudo service nginx reload
 
 Then open an URL http://smokeping.example.net/smokeping/smokeping.cgi in a web-browser.
 
-## Useful links
+## Links
+
+* [This project on GitLab](https://gitlab.com/vazhnov/smokeping_nginx)
+* [This project on GitHub](https://github.com/vazhnov/smokeping_nginx)
+
+### Useful links
 
 * [Nginx configurations for most popular CMS/CMF/Frameworks based on PHP](https://github.com/elasticweb/nginx-configs)
 * [recipes](https://github.com/nginxinc/nginx-wiki/tree/master/source/start/topics/recipes) from [nginx-wiki](https://www.nginx.com/resources/wiki/)
